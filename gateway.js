@@ -5,7 +5,7 @@ const { ApolloGateway } = require('@apollo/gateway');
 // your implementing service names and URLs
 const gateway = new ApolloGateway({
     serviceList: [
-        { name: 'riskassessment', url: 'http://localhost:8080/graphql' },
+        { name: 'myservice', url: 'http://localhost:8080/graphql' },
         //{ name: 'person', url: 'https://fts-dev.platco.xfinity.com/graphql' }
         { name: 'person', url: 'http://localhost:4001/graphql' }
         // Define additional services here
