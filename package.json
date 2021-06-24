@@ -5,17 +5,19 @@
   "main": "gateway.js",
   "scripts": {
     "server": "concurrently -k npm:server:*",
-    "server:person": "nodemon service.js",
-    "server:graphql": "nodemon gateway.js"
+    "server:address": "nodemon address-service.js",
+    "server:employee": "nodemon employee-service.js",
+    "server:gateway": "nodemon gateway.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@apollo/gateway": "^0.21.4",
     "@apollo/federation": "^0.20.7",
+    "@apollo/gateway": "^0.21.4",
     "apollo-server": "^2.19.0",
     "concurrently": "^5.3.0",
-    "nodemon": "^2.0.3"
+    "nodemon": "^2.0.7",
+    "graphql": "^15.5.0"
   }
 }
